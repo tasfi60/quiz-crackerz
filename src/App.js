@@ -1,10 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Home from './Components/Home/Home';
-import Topic from './Components/Topic/Topic';
-import Statistic from './Components/Statistics/Statistics';
-import Blog from './Components/Blog/Blog';
-import About from './Components/About/About';
+import Questions from './Components/Questions/Questions';
+// import Quiz from './Components/Quiz/Quiz';
+import Quizdetails from './Components/Quizdetails/Quizdetails';
+// import Statistic from './Components/Statistics/Statistics';
+// import Blog from './Components/Blog/Blog';
+// import About from './Components/About/About';
+// import Quizdetails from './Components/Quizdetails/Quizdetails';
 import Main from './layouts/Main';
 
 function App() {
@@ -19,21 +22,36 @@ function App() {
           element: <Home></Home>
         },
         {
-          path: '/Topic',
-          element: <Topic></Topic>
+          path: '/quiz/:id',
+          loader: async ({params}) => {
+               return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+                
+           },
+          element: <Quizdetails></Quizdetails>
         },
         {
-          path: '/Statistics',
-          element: <Statistic></Statistic>
-        },
-        {
-          path: '/Blog',
-          element: <Blog></Blog>
-        },
-        {
-          path: '/About',
-          element: <About></About>
+          path:'/questions',
+          element: <Questions></Questions>
         }
+        // {
+        //   path: '/Statistics',
+        //   element: <Statistic></Statistic>
+        // },
+        // {
+        //   path: '/Blog',
+        //   element: <Blog></Blog>
+        // },
+        // {
+        //   path: '/About',
+        //   element: <About></About>
+        // },
+        // {
+        //   path: '/quiz/:quizId',
+        //   loader: async ({params}) => {
+        //                return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+        //   },
+        //   element: <Quizdetails></Quizdetails>
+        // }
 
       ]
 
