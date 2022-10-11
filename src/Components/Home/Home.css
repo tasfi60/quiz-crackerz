@@ -3,3 +3,10 @@
 .bg-img{
     height: 620px;
 }
+
+.topic-container{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    margin-top: 50px;
+    gap: 39px;
+}

@@ -1,0 +1,29 @@
+
+
+.topics{
+    border: 1px solid rgb(236, 183, 145);
+    width: 350px;
+    height: 340px;
+    background-color: rgb(217, 209, 209);
+   
+}
+
+
+.topics img{
+    height: 200px;
+    width: 345px;
+    border: 1px solid  rgb(231, 175, 134);
+
+}
+
+.btn-container{
+    background-color: rgb(236, 118, 34);
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-container:hover{
+    background-color: rgb(237, 174, 14);
+}
