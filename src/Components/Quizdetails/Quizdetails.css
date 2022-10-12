@@ -1,11 +1,42 @@
 
 
 
+
+.quiz-paper{
+   background-color: rgb(248, 230, 230);
+   padding: 20px;
+   
+}
+
+.quiz-topic{
+    border: 1px dashed  rgb(187, 132, 112);
+    width: 400px;
+    margin-left: 450px;
+    background-color: rgb(241, 197, 181);
+    height: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    font-weight: 700;
+}
 .ques-container{
     margin-top: 30px;
-    border: 1px solid  rgb(241, 197, 181);;
+    border: 1px dashed  rgb(187, 132, 112);
+    border-radius: 20px;
     background-color: rgb(241, 197, 181);
+    width: 950px;
+    margin-left: 168px;
+    margin-bottom: 20px;
+    padding: 40px;
+    box-shadow: 5px 10px 18px #888888;
     
+}
+
+.Question{
+    font-style: italic;
+}
+
+.icon{
+    margin-left: 700px;
 }
 
 
@@ -14,13 +45,23 @@
 .option-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 10px;
     margin-top: 20px;
-    width: 500px;
-    margin-left: 500px;
-    background-color: gainsboro;
+    width: 600px;
+    margin-left: 160px;
     margin-bottom: 20px;
 }
 
 .option-container p{
-    margin-left: 10px;
+    border: 1px dashed  rgb(187, 132, 112);
+    background-color: rgb(245, 236, 141);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+
+    
+}
+
+.option-container p:hover{
+    background-color:  rgb(243, 241, 221);
 }

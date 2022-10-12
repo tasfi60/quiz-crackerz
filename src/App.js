@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
-import Questions from './Components/Questions/Questions';
+import Topics from './Components/Topics/Topics';
 // import Quiz from './Components/Quiz/Quiz';
 import Quizdetails from './Components/Quizdetails/Quizdetails';
 import Statistics from './Components/Statistics/Statistics';
@@ -33,16 +33,16 @@ function App() {
           element: <Quizdetails></Quizdetails>
         },
         {
-          path:'/questions',
-          element: <Questions></Questions>
-        },
-        {
           path: '/Blog',
           element: <Blog></Blog>
         },
         {
           path: '/statistics',
           element: <Statistics></Statistics>
+        },
+        {
+          path: '/Topic',
+          element: <Topics></Topics>
         }
         
         // {

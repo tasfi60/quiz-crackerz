@@ -16,7 +16,7 @@ const Statistics = () => {
             <h3>Statistics Of Quiz</h3>
 
 
-           <div className='container stat-bar'>
+           <div className='stat-bar'>
             { 
             <BarChart width={450} height={400} data={quiz}>
             <Bar dataKey="total" fill="#8884d8"/>
