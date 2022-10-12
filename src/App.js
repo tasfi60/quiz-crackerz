@@ -43,7 +43,7 @@ function App() {
         {
           path: '/statistics',
           element: <Statistics></Statistics>
-        },
+        }
         
         // {
         //   path: '/About',
@@ -59,7 +59,10 @@ function App() {
 
       ]
 
-    }
+    },
+       { path: '*',
+         element: <div><h2 className='mt-5'>404 ! This route not found</h2></div> 
+        }
   ])
   return (
     <div className="App">
