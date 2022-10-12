@@ -1,8 +1,7 @@
 
-.title{
+.name{
     font-weight: 700;
-    font-size: larger;
-    margin-left: -800px;
+    color: black;
 
 }
 
@@ -10,14 +9,16 @@
     height: 25px;
 }
 
-.header a{
+.header{
+    margin-left: 100px;
     text-decoration: none;
-    margin-left: 20px;
     font-size: medium;
     font-weight: 700;
     color: black;
 }
-.header a:hover{
+
+
+.header :hover{
     color: rgb(247, 174, 72);
 }
 
