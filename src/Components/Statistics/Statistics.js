@@ -18,13 +18,14 @@ const Statistics = () => {
 
            <div className='stat-bar'>
             { 
+            <ResponsiveContainer width="100%" height="120%">
             <BarChart width={450} height={400} data={quiz}>
             <Bar dataKey="total" fill="#8884d8"/>
             <XAxis dataKey="name" />
             <YAxis dataKey="total"/>
             <Tooltip />
             </BarChart>
-                
+            </ResponsiveContainer>  
             }
             
            </div>

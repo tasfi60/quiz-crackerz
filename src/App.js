@@ -3,14 +3,8 @@ import './App.css';
 import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import Topics from './Components/Topics/Topics';
-// import Quiz from './Components/Quiz/Quiz';
 import Quizdetails from './Components/Quizdetails/Quizdetails';
 import Statistics from './Components/Statistics/Statistics';
-
-// import Statistic from './Components/Statistics/Statistics';
-// import Blog from './Components/Blog/Blog';
-// import About from './Components/About/About';
-// import Quizdetails from './Components/Quizdetails/Quizdetails';
 import Main from './layouts/Main';
 import About from './Components/About/About';
 
@@ -50,18 +44,6 @@ function App() {
          element: <About></About>
         }
         
-        // {
-        //   path: '/About',
-        //   element: <About></About>
-        // },
-        // {
-        //   path: '/quiz/:quizId',
-        //   loader: async ({params}) => {
-        //                return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
-        //   },
-        //   element: <Quizdetails></Quizdetails>
-        // }
-
       ]
 
     },

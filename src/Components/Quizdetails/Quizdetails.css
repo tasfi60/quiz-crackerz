@@ -65,3 +65,57 @@
 .option-container p:hover{
     background-color:  rgb(243, 241, 221);
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .ques-container{
+        margin-left: -10px;
+        width: 300px;
+    }
+
+    .option-container{
+        width: 200px;
+        margin-left: 17px;
+       grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .quiz-topic{
+        margin-left: -10px;
+        width: 300px;
+    }
+
+    .icon{
+        margin-left: 10px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+
+    .ques-container{
+        margin-left: 90px;
+        width: 500px;
+    }
+       
+    .option-container{
+        width: 200px;
+        margin-left: 90px;
+       grid-template-columns: repeat(1,1fr);
+
+    }
+
+    .icon{
+        margin-left: -10px;
+    }
+    
+    .quiz-topic{
+        margin-left: 190px;
+        width: 300px;
+    }
+
+}
+

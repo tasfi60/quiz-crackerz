@@ -35,6 +35,10 @@ const Quizdetails = () => {
 
     }
 
+
+
+
+
     const showcorrectans = (correct,i) => {
         
         toast.success(`Correct Ans is : ${correct}`, {
@@ -45,6 +49,8 @@ const Quizdetails = () => {
       
 
     }
+
+    
     
     return (
 
