@@ -1,7 +1,6 @@
 import React from 'react';
 import {  useNavigate } from 'react-router-dom';
 // import Questions from '../Questions/Questions';
-import Quizdetails from '../Quizdetails/Quizdetails';
 import'./Quiz.css';
 
 const Quiz = ({quiz}) => {

@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import Questions from './Components/Questions/Questions';
 // import Quiz from './Components/Quiz/Quiz';
@@ -32,15 +33,16 @@ function App() {
         {
           path:'/questions',
           element: <Questions></Questions>
+        },
+        {
+          path: '/Blog',
+          element: <Blog></Blog>
         }
         // {
         //   path: '/Statistics',
         //   element: <Statistic></Statistic>
         // },
-        // {
-        //   path: '/Blog',
-        //   element: <Blog></Blog>
-        // },
+        
         // {
         //   path: '/About',
         //   element: <About></About>
