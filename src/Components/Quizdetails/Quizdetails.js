@@ -25,7 +25,7 @@ const Quizdetails = () => {
         }
         else
         {
-            toast.success('Wrong Answer!', {
+            toast.error('Wrong Answer!', {
                 position: toast.POSITION.TOP_CENTER,
                 className: 'toast-message'
             });

@@ -30,6 +30,7 @@
 
     .topics-area{
         grid-template-columns: repeat(1,2fr);
+        margin-left: 20px;
     }
 
 }
