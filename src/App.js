@@ -5,6 +5,8 @@ import Home from './Components/Home/Home';
 import Questions from './Components/Questions/Questions';
 // import Quiz from './Components/Quiz/Quiz';
 import Quizdetails from './Components/Quizdetails/Quizdetails';
+import Statistics from './Components/Statistics/Statistics';
+
 // import Statistic from './Components/Statistics/Statistics';
 // import Blog from './Components/Blog/Blog';
 // import About from './Components/About/About';
@@ -37,11 +39,11 @@ function App() {
         {
           path: '/Blog',
           element: <Blog></Blog>
-        }
-        // {
-        //   path: '/Statistics',
-        //   element: <Statistic></Statistic>
-        // },
+        },
+        {
+          path: '/statistics',
+          element: <Statistics></Statistics>
+        },
         
         // {
         //   path: '/About',

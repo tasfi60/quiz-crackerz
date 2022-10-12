@@ -1,13 +1,14 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import './Blog.css'
 
 const Blog = () => {
     return (
-        <div className='container mt-5'>
+        <div className=' container mt-5'>
             <h2>Important Questions</h2>
-            <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>What is the purpose of react router?</Accordion.Header>
+            <Accordion defaultActiveKey="0" className='accordion'>
+      <Accordion.Item eventKey="0" >
+        <Accordion.Header  >What is the purpose of react router?</Accordion.Header>
         <Accordion.Body>
         ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
         </Accordion.Body>

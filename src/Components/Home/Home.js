@@ -26,7 +26,6 @@ const Home = () => {
 
             <div className='topic-container'>
                 {
-                    // topics.data.map(topic => <Quiz key={topic.id} topic={topic} ></Quiz>)
                     quizs.data.map(quiz => <Quiz key={quiz.id} quiz ={quiz} ></Quiz>)
                 }
             </div>

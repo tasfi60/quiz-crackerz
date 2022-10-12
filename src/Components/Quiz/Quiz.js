@@ -21,9 +21,8 @@ const Quiz = ({quiz}) => {
             <button onClick={handleNavigate} className='btn-container'>
                 Start Quiz
             </button>
-           {/* <div>
-            <Quizdetails name={name}></Quizdetails>
-           </div> */}
+
+          
             
         </div>
     );
