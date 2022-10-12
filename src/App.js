@@ -12,6 +12,7 @@ import Statistics from './Components/Statistics/Statistics';
 // import About from './Components/About/About';
 // import Quizdetails from './Components/Quizdetails/Quizdetails';
 import Main from './layouts/Main';
+import About from './Components/About/About';
 
 function App() {
   const router = createBrowserRouter([
@@ -43,6 +44,10 @@ function App() {
         {
           path: '/Topic',
           element: <Topics></Topics>
+        },
+        {
+         path: '/About',
+         element: <About></About>
         }
         
         // {

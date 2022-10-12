@@ -14,9 +14,10 @@ const Topics = () => {
 
     const navigate = useNavigate();
 
-   function handleNavigate() {
-    navigate(`/quiz/${topic.id}`);
+   function handleNavigate(id) {
+    navigate(`/quiz/${id}`);
    }
+   
     
     return (
         <div className='topics-area'>
@@ -24,11 +25,11 @@ const Topics = () => {
         {
         topic.map(tname => 
 
-            <div className='grid-tepmplate'>
+            <div className='grid-tepmplate' key={tname.id}>
             <img src={tname.logo} alt="" />
             <h2>{tname.name}</h2>
             <p>Total Questions: {tname.total}</p>
-            <button onClick={handleNavigate} className='btn-container'>
+            <button onClick={() => handleNavigate(tname.id)} className='btn-container'>
                 Start Quiz
             </button>
             

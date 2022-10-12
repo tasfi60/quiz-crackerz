@@ -1,7 +1,22 @@
 
 
 .bg-img{
-    height: 620px;
+    height: 700px;
+    box-shadow: 5px 10px 18px #d9d6d6;
+    
+}
+
+
+.text-container{
+    
+    width: 650px;
+    margin-left: 410px;
+    padding: 5px;
+    background-color: rgb(236, 165, 165);
+    border-radius: 15px;
+    margin-top: 10px;
+    opacity: 0.9;
+    box-shadow: 5px 10px 18px #a49e9e;
 }
 
 .topic-container{
@@ -11,3 +26,4 @@
     gap: 39px;
     margin-bottom: 30px;
 }
+

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye,faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+import { faEye} from '@fortawesome/free-solid-svg-icons';
 import './Quizdetails.css'
 
 
@@ -12,15 +12,7 @@ const Quizdetails = () => {
 
     const quess = useLoaderData().data; 
 
-    // const [isActive, setActive] = useState(true);
-
-
    
-
-    // const toggleClass = () => {
-    //     setActive(!isActive);
-    // };
-
     const handleoption = (cans,ans) => {
 
         if(cans === ans)
@@ -50,7 +42,7 @@ const Quizdetails = () => {
             className: 'toast-message'
         });
 
-        // toggleClass();
+      
 
     }
     
@@ -62,11 +54,11 @@ const Quizdetails = () => {
            {
             quess.questions.map((ques,i) =>  
                  
-                <div className='ques-container'>
-                    {/* <FontAwesomeIcon onClick={() => showcorrectans(ques.correctAnswer)} icon={isActive ? faEyeSlash : faEye}></FontAwesomeIcon> */}
+                <div className='ques-container' key={ques.id}>
+            
                     <p className='icon'>show : <FontAwesomeIcon onClick={() => showcorrectans(ques.correctAnswer)} icon={faEye} /></p>
                      <h4 className='Question'>Ques:{i+1}.  {ques.question.slice(3,-4)}</h4>
-                    <div className='option-container'>
+                    <div className='option-container' >
                     {
                         ques.options.map((q,i)=> <p><input type="radio" value="Male" name="gender" className='button' onClick={()=> handleoption(ques.correctAnswer,q)}/> {i+1}. {q}</p>)
                     } 
